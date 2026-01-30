@@ -6,9 +6,20 @@
     <title>Primeiro odigo JS</title>
 </head>
 <body>
+    <h1 id="titulo">Olá!</h1>
+<button onclick="mudarTexto()">Clique aqui</button>
+   
     <script>
-        console.log("Olá, Mundo! Este é meu primeiro JS.")
-    </script>
+        function mudarTexto() {
+    // 1. Procuramos o elemento pelo ID
+    const elemento = document.getElementById("titulo");
     
+    // 2. Mudamos o conteúdo dele
+    elemento.innerText = "JavaScript é incrível! 🚀";
+    
+    // 3. Mudamos o estilo (CSS) via JS
+    elemento.style.color = "orange";
+}
+    </script>
 </body>
 </html>
